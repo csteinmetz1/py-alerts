@@ -12,9 +12,11 @@ I reccommend that you create a gmail account just for sending email alerts. Once
 First enable two-factor authentication [here](https://www.google.com/landing/2step/) for your google alerts account. Next you need to create an app password for your python script to login to your account. You can do that [here](https://myaccount.google.com/u/2/apppasswords) and you should see a window like this:
 
 ![app passwords](images/app_passwords.png)
+
 Now choose `Other` from the `Select app`  dropdown and set a name the name to `py-alerts` (or whatever else you would like) then hit generate. You should then be given a password similiar to the one below.
 
 ![app done](images/app_done.png)
+
 Note: This isn't a valid passcode - just shown for example.
 
 You now have everything you need to start sending email alerts. To set your credentials in python you need to create a JSON config file that contains the info for the gmail account used to send the alerts as well as set the emails of recipients of the alerts. An example is shown below. 
