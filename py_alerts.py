@@ -40,5 +40,3 @@ class email_alert():
 		server.login(self.gmail_user, self.gmail_pass)
 		server.sendmail(self.gmail_user, self.recipients, text)
 		server.quit()
-
-email_alert().send(subject="This is the subject", message="This is the body of the email")
