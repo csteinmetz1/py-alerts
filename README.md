@@ -9,14 +9,12 @@ git clone https://github.com/csteinmetz1/py-alerts.git
 ```
 
 Install dependenacies.
-
 ```
 pip install future
 pip install requests
 ```
 
 **Built to work with either Python 2 or Python 3.**
-
 
 ### Email
 I reccommend that you create a gmail account just for sending email alerts. Once you have an account tou need to do adjust some settings to send email alerts. 
@@ -56,12 +54,15 @@ Sending an email in your script is easy.
 ``` python
 from py_alerts import email_alert
 
-email_alert().send(subject="This is the subject", message="This is the body of the email")
+email_alert_obj = email_alert()
+my_email_obj.send(subject="This is the subject", message="This is the body of the email")
+
 ```
 And you should recieve an email shortly after. Ensure that you place the `py_alerts.py` and `settings.json` files in the same directory as the python script you are trying to send emails from. 
 
 ``` python
 from py_alerts import slack_alert
 
-slack_alert().send(message="This is the message text.")
+slack_alert_obj = slack_alert()
+my_slack_obj.send(message="This is the message text.")
 ```
